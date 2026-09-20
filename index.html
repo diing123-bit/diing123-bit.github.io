@@ -2,21 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>빈 페이지</title>
+    <title>세븐나이츠 리버스</title>
     <style>
         body {
-            /* 기본 여백을 제거하고 배경색을 완전한 흰색으로 설정합니다. */
+            /* 화면 전체 높이를 100% 사용하도록 설정 */
             margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            width: 100vw;
             height: 100vh;
-            overflow: hidden; /* 스크롤바가 생기지 않도록 방지합니다. */
+            
+            /* 내부 요소를 정가운데 배치하는 마법의 코드 (Flexbox) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img {
+            /* 정중앙 위치에서 Y축(세로) 방향으로 -4cm (위로 4cm) 이동 */
+            transform: translateY(-4cm);
+            
+            /* 이미지가 화면보다 클 경우를 대비해 최대 너비 제한 */
+            max-width: 80%;
         }
     </style>
 </head>
 <body>
-    <!-- 본문 내용이 전혀 없는 빈 공간입니다. -->
+    <!-- src="SevenKnightsLogo.png" 에 방금 업로드한 이미지의 정확한 파일명을 적어주세요 -->
+    <img src="image_a9d146.jpg" alt="세븐나이츠 리버스 로고">
 </body>
 </html>
