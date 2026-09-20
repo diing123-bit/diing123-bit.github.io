@@ -9,8 +9,6 @@
             margin: 0;
             height: 100vh;
             display: flex;
-            
-            /* 요소들을 가로가 아닌 세로(위아래)로 배치하도록 변경 */
             flex-direction: column; 
             justify-content: center;
             align-items: center;
@@ -18,35 +16,46 @@
         
         img {
             transform: translateY(-4cm);
-            max-width: 25%; /* 로고 크기 */
-            margin-bottom: 60px; /* 로고와 아래 상자들 사이의 간격 */
+            max-width: 25%;
+            margin-bottom: 60px;
         }
 
-        /* 3개의 상자를 가로로 나란히 묶어주는 겉포장지 역할 */
         .box-container {
             display: flex;
-            gap: 30px; /* 상자들 사이의 간격 */
+            gap: 30px;
         }
 
-        /* 개별 상자의 디자인 */
+        /* 버튼 역할을 할 상자의 디자인 */
         .box {
-            width: 280px; /* 상자의 가로 너비 */
-            height: 160px; /* 상자의 세로 높이 */
-            background-color: white; /* 하얀색 바탕 */
-            border: 4px solid black; /* 두께 4px의 검은색 테두리 */
-            border-radius: 20px; /* 모서리를 둥글게 깎음 */
+            width: 280px;
+            height: 160px;
+            background-color: white;
+            border: 4px solid black;
+            border-radius: 20px;
+            
+            /* a 태그 특유의 파란색 글씨와 밑줄 제거 */
+            text-decoration: none;
+            color: black;
+            
+            /* 글씨를 상자 정중앙에 배치 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* 글씨 크기와 굵기 설정 */
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- 로고 이미지 (파일명 확인 필수) -->
-    <img src="GuildLogo.png" alt="길드 로고">
+    <img src="GuildLogo.png" alt="세븐나이츠 리버스 로고">
     
-    <!-- 하얀색 둥근 상자 3개 -->
     <div class="box-container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <!-- href="이동할 주소" 를 적어줍니다. target="_blank"는 새 창에서 열리게 해줍니다. -->
+        <a href="https://www.naver.com" target="_blank" class="box">네이버로 이동</a>
+        <a href="https://www.google.com" target="_blank" class="box">구글로 이동</a>
+        <a href="https://www.youtube.com" target="_blank" class="box">유튜브로 이동</a>
     </div>
 </body>
 </html>
